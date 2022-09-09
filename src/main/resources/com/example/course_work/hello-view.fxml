@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import java.util.ArrayList?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course_work.Controller">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <TabPane fx:id = "tabPane" onContextMenuRequested="#viewButton"  layoutX="92.0" layoutY="90.0" prefHeight="547.0" prefWidth="814.0" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                    <Tab text="Month" fx:id = "viewMonth">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="800.0">
+                                <children>
+                                    <GridPane id="month" alignment="TOP_RIGHT" gridLinesVisible="true" layoutX="57.0" layoutY="67.0" opacity="0.5" prefHeight="402.0" prefWidth="700.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                              <children>
+                                 <SplitPane blendMode="DARKEN" dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label1" layoutX="45.0" layoutY="-1.0" text="-" textAlignment="CENTER">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v1" layoutX="-1.0" layoutY="-1.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t1" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t2" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label8" layoutX="45.0" text="-" textAlignment="CENTER">
+                                                <opaqueInsets>
+                                                   <Insets bottom="1.0" right="1.0" top="1.0" />
+                                                </opaqueInsets>
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v8" layoutX="-1.0" layoutY="-1.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t15" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t16" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children>
+                                       </AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label3" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v3" layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t5" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t6" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label2" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v2" layoutX="-1.0" prefHeight="44.0" prefWidth="102.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t3" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t4" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label9" layoutX="45.0" text="-" textAlignment="CENTER">
+                                                <opaqueInsets>
+                                                   <Insets bottom="1.0" right="1.0" top="1.0" />
+                                                </opaqueInsets>
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v9" layoutX="-1.0" layoutY="-1.0" prefHeight="42.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t17" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t18" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label10" layoutX="45.0" text="Label" textAlignment="CENTER">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                          <opaqueInsets>
+                                             <Insets bottom="1.0" right="1.0" top="1.0" />
+                                          </opaqueInsets>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v10" layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t19" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t20" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label11" layoutX="45.0" text="Label" textAlignment="CENTER">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                          <opaqueInsets>
+                                             <Insets bottom="1.0" right="1.0" top="1.0" />
+                                          </opaqueInsets>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v11" layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t21" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t22" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label12" layoutX="45.0" text="Label" textAlignment="CENTER">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                          <opaqueInsets>
+                                             <Insets bottom="1.0" right="1.0" top="1.0" />
+                                          </opaqueInsets>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v12" layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t23" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t24" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label4" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v4" layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t7" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t8" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label5" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v5" layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t9" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t10" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label6" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v6" layoutX="-2.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t11" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t12" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label7" layoutX="45.0" text="-">
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v7" layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t13" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t14" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label13" layoutX="45.0" text="Label" textAlignment="CENTER">
+                                                <opaqueInsets>
+                                                   <Insets bottom="1.0" right="1.0" top="1.0" />
+                                                </opaqueInsets>
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v13" layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t25" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t26" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label14" layoutX="45.0" text="Label" textAlignment="CENTER">
+                                                <opaqueInsets>
+                                                   <Insets bottom="1.0" right="1.0" top="1.0" />
+                                                </opaqueInsets>
+                                                <padding>
+                                                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                </padding>
+                                             </Label>
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox fx:id="v14" layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t27" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t28" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label15" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t29" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t30" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label16" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-2.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t31" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t32" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label17" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t33" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t34" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label18" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t35" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t36" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label19" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="42.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t37" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t38" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label20" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t39" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t40" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label21" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t41" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t42" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label22" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t43" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t44" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label23" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t45" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t46" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label24" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t47" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t48" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label25" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t49" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t50" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label26" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t51" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t52" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label27" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t53" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t54" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label28" layoutX="45.0" text="Label" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t55" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t56" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label29" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t57" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t58" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label30" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t59" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t60" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label31" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t61" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t62" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label32" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t63" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t64" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label33" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t65" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t66" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label34" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t67" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t68" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label35" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="46.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t69" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t70" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label36" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="44.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t71" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t72" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label37" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t73" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t74" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label38" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t75" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t76" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label39" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t77" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t78" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label40" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t79" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t80" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label41" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="43.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t81" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t82" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.3" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="label42" layoutX="45.0" text="-" textAlignment="CENTER" />
+                                          </children>
+                                       </AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="45.0" prefWidth="100.0" spacing="3.0">
+                                                <children>
+                                                   <Text fx:id="t83" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="t84" onMouseClicked="#click" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                                </padding></VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                  <fx:define>
+                                      <ArrayList fx:id="labelListM">
+                                          <fx:reference source="label1" />
+                                          <fx:reference source="label2" />
+                                          <fx:reference source="label3" />
+                                          <fx:reference source="label4" />
+                                          <fx:reference source="label5" />
+                                          <fx:reference source="label6" />
+                                          <fx:reference source="label7" />
+                                          <fx:reference source="label8" />
+                                          <fx:reference source="label9" />
+                                          <fx:reference source="label10" />
+                                          <fx:reference source="label11" />
+                                          <fx:reference source="label12" />
+                                          <fx:reference source="label13" />
+                                          <fx:reference source="label14" />
+                                          <fx:reference source="label15" />
+                                          <fx:reference source="label16" />
+                                          <fx:reference source="label17" />
+                                          <fx:reference source="label18" />
+                                          <fx:reference source="label19" />
+                                          <fx:reference source="label20" />
+                                          <fx:reference source="label21" />
+                                          <fx:reference source="label22" />
+                                          <fx:reference source="label23" />
+                                          <fx:reference source="label24" />
+                                          <fx:reference source="label25" />
+                                          <fx:reference source="label26" />
+                                          <fx:reference source="label27" />
+                                          <fx:reference source="label28" />
+                                          <fx:reference source="label29" />
+                                          <fx:reference source="label30" />
+                                          <fx:reference source="label31" />
+                                          <fx:reference source="label32" />
+                                          <fx:reference source="label33" />
+                                          <fx:reference source="label34" />
+                                          <fx:reference source="label35" />
+                                          <fx:reference source="label36" />
+                                          <fx:reference source="label37" />
+                                          <fx:reference source="label38" />
+                                          <fx:reference source="label39" />
+                                          <fx:reference source="label40" />
+                                          <fx:reference source="label41" />
+                                          <fx:reference source="label42" />
+                                      </ArrayList>
+                                  </fx:define>
+                                  <fx:define>
+                                      <ArrayList fx:id="eventListM">
+                                          <fx:reference source="t1" />
+                                          <fx:reference source="t2" />
+                                          <fx:reference source="t3" />
+                                          <fx:reference source="t4" />
+                                          <fx:reference source="t5" />
+                                          <fx:reference source="t6" />
+                                          <fx:reference source="t7" />
+                                          <fx:reference source="t8" />
+                                          <fx:reference source="t9" />
+                                          <fx:reference source="t10" />
+                                          <fx:reference source="t11" />
+                                          <fx:reference source="t12" />
+                                          <fx:reference source="t13" />
+                                          <fx:reference source="t14" />
+                                          <fx:reference source="t15" />
+                                          <fx:reference source="t16" />
+                                          <fx:reference source="t17" />
+                                          <fx:reference source="t18" />
+                                          <fx:reference source="t19" />
+                                          <fx:reference source="t20" />
+                                          <fx:reference source="t21" />
+                                          <fx:reference source="t22" />
+                                          <fx:reference source="t23" />
+                                          <fx:reference source="t24" />
+                                          <fx:reference source="t25" />
+                                          <fx:reference source="t26" />
+                                          <fx:reference source="t27" />
+                                          <fx:reference source="t28" />
+                                          <fx:reference source="t29" />
+                                          <fx:reference source="t30" />
+                                          <fx:reference source="t31" />
+                                          <fx:reference source="t32" />
+                                          <fx:reference source="t33" />
+                                          <fx:reference source="t34" />
+                                          <fx:reference source="t35" />
+                                          <fx:reference source="t36" />
+                                          <fx:reference source="t37" />
+                                          <fx:reference source="t38" />
+                                          <fx:reference source="t39" />
+                                          <fx:reference source="t40" />
+                                          <fx:reference source="t41" />
+                                          <fx:reference source="t42" />
+                                          <fx:reference source="t43" />
+                                          <fx:reference source="t44" />
+                                          <fx:reference source="t45" />
+                                          <fx:reference source="t46" />
+                                          <fx:reference source="t47" />
+                                          <fx:reference source="t48" />
+                                          <fx:reference source="t49" />
+                                          <fx:reference source="t50" />
+                                          <fx:reference source="t51" />
+                                          <fx:reference source="t52" />
+                                          <fx:reference source="t53" />
+                                          <fx:reference source="t54" />
+                                          <fx:reference source="t55" />
+                                          <fx:reference source="t56" />
+                                          <fx:reference source="t57" />
+                                          <fx:reference source="t58" />
+                                          <fx:reference source="t59" />
+                                          <fx:reference source="t60" />
+                                          <fx:reference source="t61" />
+                                          <fx:reference source="t62" />
+                                          <fx:reference source="t63" />
+                                          <fx:reference source="t64" />
+                                          <fx:reference source="t65" />
+                                          <fx:reference source="t66" />
+                                          <fx:reference source="t67" />
+                                          <fx:reference source="t68" />
+                                          <fx:reference source="t69" />
+                                          <fx:reference source="t70" />
+                                          <fx:reference source="t71" />
+                                          <fx:reference source="t72" />
+                                          <fx:reference source="t73" />
+                                          <fx:reference source="t74" />
+                                          <fx:reference source="t75" />
+                                          <fx:reference source="t76" />
+                                          <fx:reference source="t77" />
+                                          <fx:reference source="t78" />
+                                          <fx:reference source="t79" />
+                                          <fx:reference source="t80" />
+                                          <fx:reference source="t81" />
+                                          <fx:reference source="t82" />
+                                          <fx:reference source="t83" />
+                                          <fx:reference source="t84" />
+                                      </ArrayList>
+                                  </fx:define>
+                              </children>
+                                    </GridPane>
+                                    <HBox fillHeight="false" layoutX="50.0" layoutY="41.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="700.0" spacing="77.0">
+                                        <children>
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MON" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TUE" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WED" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="THU" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FRI" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SAT" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SUN" />
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+                                        </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="340.0" layoutY="14.0" prefHeight="30.0" prefWidth="120.0" spacing="20.0">
+                                        <children>
+                                            <Button id="prev" mnemonicParsing="false" onAction="#previousMonth" prefHeight="22.0" prefWidth="22.0" text="&lt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                            <Text fx:id="monthName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" />
+                                            <Button fx:id="next" mnemonicParsing="false" onAction="#nextMonth" prefHeight="22.0" prefWidth="22.0" text="&gt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                    <Tab text="Week" fx:id = "viewWeek">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="802.0">
+                                <children>
+                                    <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutX="50.0" layoutY="68.0" opacity="0.5" prefHeight="382.0" prefWidth="700.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                              <children>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw1" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw2" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw9" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw11" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw12" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw13" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw14" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw3" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="340.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw15" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw16" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw17" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw18" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw19" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw20" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw21" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw4" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw22" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw23" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw24" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw25" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw26" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw27" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw28" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw5" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw29" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw30" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw31" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw32" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw33" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw34" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw35" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw6" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox layoutX="-1.0" prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw36" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw37" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw38" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw39" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw40" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw41" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw42" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                 <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6">
+                                   <items>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <Label fx:id="labelw7" layoutX="45.0" layoutY="9.0" text="Label" />
+                                          </children></AnchorPane>
+                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <children>
+                                             <VBox prefHeight="341.0" prefWidth="100.0" spacing="10.0">
+                                                <children>
+                                                   <Text fx:id="tw43" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw44" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw45" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw46" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw47" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw48" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                   <Text fx:id="tw49" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                </children>
+                                                <padding>
+                                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                </padding>
+                                             </VBox>
+                                          </children></AnchorPane>
+                                   </items>
+                                 </SplitPane>
+                                  <fx:define>
+                                    <ArrayList fx:id="labelListW">
+                                      <fx:reference source="labelw1" />
+                                      <fx:reference source="labelw2" />
+                                      <fx:reference source="labelw3" />
+                                      <fx:reference source="labelw4" />
+                                      <fx:reference source="labelw5" />
+                                      <fx:reference source="labelw6" />
+                                      <fx:reference source="labelw7" />
+                                    </ArrayList>
+                                  </fx:define>
+                                  <fx:define>
+                                      <ArrayList fx:id="eventListW">
+                                          <fx:reference source="tw1" />
+                                          <fx:reference source="tw2" />
+                                          <fx:reference source="tw3" />
+                                          <fx:reference source="tw4" />
+                                          <fx:reference source="tw5" />
+                                          <fx:reference source="tw6" />
+                                          <fx:reference source="tw7" />
+                                          <fx:reference source="tw8" />
+                                          <fx:reference source="tw9" />
+                                          <fx:reference source="tw10" />
+                                          <fx:reference source="tw11" />
+                                          <fx:reference source="tw12" />
+                                          <fx:reference source="tw13" />
+                                          <fx:reference source="tw14" />
+                                          <fx:reference source="tw15" />
+                                          <fx:reference source="tw16" />
+                                          <fx:reference source="tw17" />
+                                          <fx:reference source="tw18" />
+                                          <fx:reference source="tw19" />
+                                          <fx:reference source="tw20" />
+                                          <fx:reference source="tw21" />
+                                          <fx:reference source="tw22" />
+                                          <fx:reference source="tw23" />
+                                          <fx:reference source="tw24" />
+                                          <fx:reference source="tw25" />
+                                          <fx:reference source="tw26" />
+                                          <fx:reference source="tw27" />
+                                          <fx:reference source="tw28" />
+                                          <fx:reference source="tw29" />
+                                          <fx:reference source="tw30" />
+                                          <fx:reference source="tw31" />
+                                          <fx:reference source="tw32" />
+                                          <fx:reference source="tw33" />
+                                          <fx:reference source="tw34" />
+                                          <fx:reference source="tw35" />
+                                          <fx:reference source="tw36" />
+                                          <fx:reference source="tw37" />
+                                          <fx:reference source="tw38" />
+                                          <fx:reference source="tw39" />
+                                          <fx:reference source="tw40" />
+                                          <fx:reference source="tw41" />
+                                          <fx:reference source="tw42" />
+                                          <fx:reference source="tw43" />
+                                          <fx:reference source="tw44" />
+                                          <fx:reference source="tw45" />
+                                          <fx:reference source="tw46" />
+                                          <fx:reference source="tw47" />
+                                          <fx:reference source="tw48" />
+                                          <fx:reference source="tw49" />
+                                      </ArrayList>
+                                  </fx:define>
+                              </children>
+                                    </GridPane>
+                                    <HBox fillHeight="false" layoutX="50.0" layoutY="41.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="700.0" spacing="77.0">
+                                        <children>
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MON" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TUE" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WED" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="THU" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FRI" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SAT" />
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SUN" />
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+                                        </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="295.0" layoutY="14.0" prefHeight="29.0" prefWidth="209.0" spacing="20.0">
+                                        <children>
+                                            <Button fx:id="prevWeek" mnemonicParsing="false" onAction="#previousWeek" prefHeight="30.0" prefWidth="30.0" text="&lt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                            <Text fx:id="weekName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            <Button fx:id="nextWeek" mnemonicParsing="false" onAction="#nextWeek" prefHeight="22.0" prefWidth="22.0" text="&gt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                    <Tab text="Day" fx:id = "viewDay">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                <children>
+                                    <HBox alignment="CENTER" layoutX="300.0" layoutY="14.0" prefHeight="28.0" prefWidth="200.0" spacing="20.0">
+                                        <children>
+                                            <Button fx:id="prevDay" mnemonicParsing="false" onAction="#previousDay" prefHeight="22.0" prefWidth="22.0" text="&lt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                            <Text fx:id="dayName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                            <Button fx:id="nextDay" mnemonicParsing="false" onAction="#nextDay" prefHeight="22.0" prefWidth="22.0" text="&gt;">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                    </HBox>
+                           <GridPane layoutX="132.0" layoutY="81.0" prefHeight="347.0" prefWidth="642.0">
+                             <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.5999755859375" minWidth="10.0" prefWidth="225.59996337890624" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="533.5999755859375" minWidth="10.0" prefWidth="412.80003662109374" />
+                             </columnConstraints>
+                             <rowConstraints>
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             </rowConstraints>
+                              <children>
+                                 <Text fx:id="ev1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 <Text fx:id="ev2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1" />
+                                 <Text fx:id="ev3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="2" />
+                                 <Text fx:id="ev4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="3" />
+                                 <Text fx:id="ev5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="4" />
+                                 <Text fx:id="ev6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="5" />
+                                 <Text fx:id="ev7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="6" />
+                                 <Text fx:id="ev8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="7" />
+                                 <Text fx:id="d1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" />
+                                 <Text fx:id="d2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 <Text fx:id="d3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 <Text fx:id="d4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 <Text fx:id="d5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 <Text fx:id="d6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                 <Text fx:id="d7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                 <Text fx:id="d8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              </children>
+                           </GridPane>
+                           <HBox alignment="CENTER_LEFT" layoutX="63.0" layoutY="49.0" prefHeight="30.0" prefWidth="711.0" spacing="200.0">
+                              <children>
+                                 <Label text="Event" />
+                                 <Label text="Description" />
+                              </children>
+                              <padding>
+                                 <Insets left="70.0" />
+                              </padding>
+                           </HBox>
+                                </children>
+                            </AnchorPane>
+                        </content>
+                            <fx:define>
+                                <ArrayList fx:id="evListD">
+                                    <fx:reference source="ev1" />
+                                    <fx:reference source="ev2" />
+                                    <fx:reference source="ev3" />
+                                    <fx:reference source="ev4" />
+                                    <fx:reference source="ev5" />
+                                    <fx:reference source="ev6" />
+                                    <fx:reference source="ev7" />
+                                    <fx:reference source="ev8" />
+                                </ArrayList>
+                            </fx:define>
+                            <fx:define>
+                                <ArrayList fx:id="descrList">
+                                    <fx:reference source="d1" />
+                                    <fx:reference source="d2" />
+                                    <fx:reference source="d3" />
+                                    <fx:reference source="d4" />
+                                    <fx:reference source="d5" />
+                                    <fx:reference source="d6" />
+                                    <fx:reference source="d7" />
+                                    <fx:reference source="d8" />
+                                </ArrayList>
+                            </fx:define>
+                    </Tab>
+                </tabs>
+            </TabPane>
+            <ComboBox fx:id="comboBox" layoutX="775.0" layoutY="52.0" onAction="#viewButton" prefHeight="30.0" prefWidth="131.0" promptText="Filters" />
+            <Button fx:id="create" layoutX="95.0" layoutY="52.0" minWidth="34.0" mnemonicParsing="false" onAction="#createEvent" prefHeight="29.0" prefWidth="127.0" text="Create" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="13.0" fitWidth="12.0" nodeOrientation="INHERIT" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@1200px-Plus+.svg.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+         <Button fx:id="refreshM" layoutX="853.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" text="refresh" />
+        </children>
+    </Pane>
+</VBox>

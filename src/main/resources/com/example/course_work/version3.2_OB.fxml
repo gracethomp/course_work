@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course_work.ControllerDeleteEdit">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="eventName" layoutX="35.0" layoutY="58.0" opacity="0.76" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="137.09921825110013">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="editButton" onMouseClicked="#edit" fitHeight="16.0" fitWidth="17.0" layoutX="269.0" layoutY="13.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@650143.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="293.0" layoutY="12.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kisspng-rubbish-bins-waste-paper-baskets-computer-icons-5ae9300f5d1000.6366266715252316313812.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="26.0" layoutX="325.0" layoutY="6.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5968a2c8f2ed115d40bbe123.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
+</VBox>
